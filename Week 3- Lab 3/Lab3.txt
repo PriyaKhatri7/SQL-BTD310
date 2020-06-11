@@ -1,0 +1,102 @@
+We, Priya, Muskan, Lukas, declare that the attached assignment is our own work in accordance with 
+the Seneca Academic Policy.  No part of this assignment has been copied manually or electronically 
+from any other source (including web sites) or distributed to other students.
+
+EMPLOYEE_ID LAST_NAME                 FIRST_NAME           Retiremen
+----------- ------------------------- -------------------- ---------
+        100 King                      Steven               17-JUN-87
+        200 Whalen                    Jennifer             17-SEP-87
+        101 Kochhar                   Neena                21-SEP-89
+        103 Hunold                    Alexander            03-JAN-90
+        104 Ernst                     Bruce                21-MAY-91
+        102 De Haan                   Lex                  13-JAN-93
+        205 Higgins                   Shelley              07-JUN-94
+        206 Gietz                     William              07-JUN-94
+        141 Rajs                      Trenna               17-OCT-95
+        201 Hartstein                 Michael              17-FEB-96
+        174 Abel                      Ellen                11-MAY-96
+
+EMPLOYEE_ID LAST_NAME                 FIRST_NAME           Retiremen
+----------- ------------------------- -------------------- ---------
+        142 Davies                    Curtis               29-JAN-97
+        202 Fay                       Pat                  17-AUG-97
+        143 Matos                     Randall              15-MAR-98
+        176 Taylor                    Jonathon             24-MAR-98
+        144 Vargas                    Peter                09-JUL-98
+        107 Lorentz                   Diana                07-FEB-99
+        178 Grant                     Kimberely            24-MAY-99
+        124 Mourgos                   Kevin                16-NOV-99
+        149 Zlotkey                   Eleni                29-JAN-00
+
+20 rows selected. 
+
+
+     WEEKS
+----------
+12.8571429
+
+
+REPLACE(REPLACE(FIRS
+--------------------
+Curti$
+$helley
+$teven
+
+
+Employee names                
+------------------------------
+***Abel, Ellen----------------
+***Davies, Curtis-------------
+***De Haan, Lex---------------
+***Ernst, Bruce---------------
+***Fay, Pat-------------------
+***Gietz, William-------------
+***Grant, Kimberely-----------
+***Hartstein, Michael---------
+***Higgins, Shelley-----------
+***Hunold, Alexander----------
+***King, Steven---------------
+
+Employee names                
+------------------------------
+***Kochhar, Neena-------------
+***Lorentz, Diana-------------
+***Matos, Randall-------------
+***Mourgos, Kevin-------------
+***Rajs, Trenna---------------
+***Taylor, Jonathon-----------
+***Vargas, Peter--------------
+***Whalen, Jennifer-----------
+***Zlotkey, Eleni-------------
+
+20 rows selected. 
+
+
+INITCAP(REPLACE(LOWER(FIRST_NAME),'E','H
+----------------------------------------
+Hellhen
+Curtis
+Lhex
+Bruche
+Pat
+William
+Kimbherhely
+Michahel
+Shhellhey
+Alhexandher
+Sthevhen
+
+INITCAP(REPLACE(LOWER(FIRST_NAME),'E','H
+----------------------------------------
+Nhehena
+Diana
+Randall
+Khevin
+Trhenna
+Jonathon
+Phether
+Jhennifher
+Helheni
+
+20 rows selected. 
+

@@ -1,0 +1,90 @@
+Name           Null?    Type         
+-------------- -------- ------------ 
+EMPLOYEE_ID    NOT NULL NUMBER(6)    
+FIRST_NAME              VARCHAR2(20) 
+LAST_NAME      NOT NULL VARCHAR2(25) 
+EMAIL          NOT NULL VARCHAR2(25) 
+PHONE_NUMBER            VARCHAR2(20) 
+HIRE_DATE      NOT NULL DATE         
+JOB_ID         NOT NULL VARCHAR2(10) 
+SALARY                  NUMBER(8,2)  
+COMMISSION_PCT          NUMBER(2,2)  
+MANAGER_ID              NUMBER(6)    
+DEPARTMENT_ID           NUMBER(4)    
+
+EMPLOYEE_ID LAST_NAME                
+----------- -------------------------
+        141 Rajs                     
+        142 Davies                   
+
+
+ REGION_ID
+----------
+         1
+         2
+         4
+         3
+
+
+COUNTRIES                                                                             
+--------------------------------------------------------------------------------------
+AR, Argentina, 2
+AU, Australia, 3
+BE, Belgium, 1
+BR, Brazil, 2
+CA, Canada, 2
+CH, Switzerland, 1
+CN, China, 3
+DE, Germany, 1
+DK, Denmark, 1
+EG, Egypt, 4
+FR, France, 1
+
+COUNTRIES                                                                             
+--------------------------------------------------------------------------------------
+HK, HongKong, 3
+IL, Israel, 4
+IN, India, 3
+IT, Italy, 1
+JP, Japan, 3
+KW, Kuwait, 4
+MX, Mexico, 2
+NG, Nigeria, 4
+NL, Netherlands, 1
+SG, Singapore, 3
+UK, United Kingdom, 1
+
+COUNTRIES                                                                             
+--------------------------------------------------------------------------------------
+US, United States of America, 2
+ZM, Zambia, 4
+ZW, Zimbabwe, 4
+
+25 rows selected. 
+
+
+STREET ADDRESS                           CITY                          
+---------------------------------------- ------------------------------
+Mariano Escobedo 9991                    Mexico City                   
+Schwanthalerstr. 7031                    Munich                        
+
+old:SELECT
+    last_name,
+    first_name
+FROM
+    employees
+WHERE
+    department_id = &department_id
+new:SELECT
+    last_name,
+    first_name
+FROM
+    employees
+WHERE
+    department_id = 20
+
+LAST_NAME                 FIRST_NAME          
+------------------------- --------------------
+Hartstein                 Michael             
+Fay                       Pat                 
+

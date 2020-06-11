@@ -1,0 +1,175 @@
+We, Muskan, Priya and Lukas declare that the attached assignment is our own work in accordance with the Seneca Academic Policy.  No part of this assignment has been copied manually or electronically from any other source (including web sites) or distributed to other students.
+
+F.	Also, on top of Lab1.txt, specify what each member has done towards the completion of this work:
+	Name	Task(s)
+1-	Muskan	answers
+2-	Priya	answers	
+3-	Lukas	answers	
+
+Name           Null?    Type         
+-------------- -------- ------------ 
+EMPLOYEE_ID    NOT NULL NUMBER(6)    
+FIRST_NAME              VARCHAR2(20) 
+LAST_NAME      NOT NULL VARCHAR2(25) 
+EMAIL          NOT NULL VARCHAR2(25) 
+PHONE_NUMBER            VARCHAR2(20) 
+HIRE_DATE      NOT NULL DATE         
+JOB_ID         NOT NULL VARCHAR2(10) 
+SALARY                  NUMBER(8,2)  
+COMMISSION_PCT          NUMBER(2,2)  
+MANAGER_ID              NUMBER(6)    
+DEPARTMENT_ID           NUMBER(4)    
+>>Query Run In:Query Result
+>>Query Run In:Query Result 1
+old:SELECT
+    *
+FROM
+    employees
+WHERE
+    last_name BETWEEN '&first' AND '&last'
+new:SELECT
+    *
+FROM
+    employees
+WHERE
+    last_name BETWEEN 'King' AND 'Taylor'
+>>Query Run In:Query Result 2
+old:SELECT
+    *
+FROM
+    employees
+WHERE
+    hire_date BETWEEN '&FIRST' AND '&LAST'
+ORDER BY
+    hire_date DESC
+new:SELECT
+    *
+FROM
+    employees
+WHERE
+    hire_date BETWEEN '01-JAN-90' AND '31-DEC-99'
+ORDER BY
+    hire_date DESC
+>>Query Run In:Query Result 3
+Name           Null?    Type         
+-------------- -------- ------------ 
+EMPLOYEE_ID    NOT NULL NUMBER(6)    
+FIRST_NAME              VARCHAR2(20) 
+LAST_NAME      NOT NULL VARCHAR2(25) 
+EMAIL          NOT NULL VARCHAR2(25) 
+PHONE_NUMBER            VARCHAR2(20) 
+HIRE_DATE      NOT NULL DATE         
+JOB_ID         NOT NULL VARCHAR2(10) 
+SALARY                  NUMBER(8,2)  
+COMMISSION_PCT          NUMBER(2,2)  
+MANAGER_ID              NUMBER(6)    
+DEPARTMENT_ID           NUMBER(4)    
+
+PHONE_NUMBER        
+--------------------
+011.44.1344.429018
+011.44.1644.429263
+011.44.1644.429265
+011.44.1644.429267
+515.123.4444
+515.123.4567
+515.123.4568
+515.123.4569
+515.123.5555
+515.123.8080
+515.123.8181
+
+PHONE_NUMBER        
+--------------------
+590.423.4567
+590.423.4568
+590.423.5567
+603.123.6666
+650.121.2004
+650.121.2874
+650.121.2994
+650.121.8009
+650.123.5234
+
+20 rows selected. 
+
+
+Departments and managers                                                                                                               
+---------------------------------------------------------------------------------------------------------------------------------------
+[10] Administration: Manager's ID -->  [200]
+[20] Marketing: Manager's ID -->  [201]
+[50] Shipping: Manager's ID -->  [124]
+[60] IT: Manager's ID -->  [103]
+[80] Sales: Manager's ID -->  [149]
+[90] Executive: Manager's ID -->  [100]
+[110] Accounting: Manager's ID -->  [205]
+[190] Contracting: Manager's ID -->  []
+
+8 rows selected. 
+
+old:SELECT
+    *
+FROM
+    employees
+WHERE
+    last_name BETWEEN '&first' AND '&last'
+new:SELECT
+    *
+FROM
+    employees
+WHERE
+    last_name BETWEEN 'King' AND 'Taylor'
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- --------- ---------- ---------- -------------- ---------- -------------
+        100 Steven               King                      SKING                     515.123.4567         17-JUN-87 AD_PRES         24000                                      90
+        101 Neena                Kochhar                   NKOCHHAR                  515.123.4568         21-SEP-89 AD_VP           17000                       100            90
+        107 Diana                Lorentz                   DLORENTZ                  590.423.5567         07-FEB-99 IT_PROG          4200                       103            60
+        143 Randall              Matos                     RMATOS                    650.121.2874         15-MAR-98 ST_CLERK         2600                       124            50
+        124 Kevin                Mourgos                   KMOURGOS                  650.123.5234         16-NOV-99 ST_MAN           5800                       100            50
+        141 Trenna               Rajs                      TRAJS                     650.121.8009         17-OCT-95 ST_CLERK         3500                       124            50
+        176 Jonathon             Taylor                    JTAYLOR                   011.44.1644.429265   24-MAR-98 SA_REP           8600             .2        149            80
+
+7 rows selected. 
+
+old:SELECT
+    *
+FROM
+    employees
+WHERE
+    hire_date BETWEEN '&FIRST' AND '&LAST'
+ORDER BY
+    hire_date DESC
+new:SELECT
+    *
+FROM
+    employees
+WHERE
+    hire_date BETWEEN '01-JAN-90' AND '31-DEC-99'
+ORDER BY
+    hire_date DESC
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- --------- ---------- ---------- -------------- ---------- -------------
+        124 Kevin                Mourgos                   KMOURGOS                  650.123.5234         16-NOV-99 ST_MAN           5800                       100            50
+        178 Kimberely            Grant                     KGRANT                    011.44.1644.429263   24-MAY-99 SA_REP           7000            .15        149              
+        107 Diana                Lorentz                   DLORENTZ                  590.423.5567         07-FEB-99 IT_PROG          4200                       103            60
+        144 Peter                Vargas                    PVARGAS                   650.121.2004         09-JUL-98 ST_CLERK         2500                       124            50
+        176 Jonathon             Taylor                    JTAYLOR                   011.44.1644.429265   24-MAR-98 SA_REP           8600             .2        149            80
+        143 Randall              Matos                     RMATOS                    650.121.2874         15-MAR-98 ST_CLERK         2600                       124            50
+        202 Pat                  Fay                       PFAY                      603.123.6666         17-AUG-97 MK_REP           6000                       201            20
+        142 Curtis               Davies                    CDAVIES                   650.121.2994         29-JAN-97 ST_CLERK         3100                       124            50
+        174 Ellen                Abel                      EABEL                     011.44.1644.429267   11-MAY-96 SA_REP          11000             .3        149            80
+        201 Michael              Hartstein                 MHARTSTE                  515.123.5555         17-FEB-96 MK_MAN          13000                       100            20
+        141 Trenna               Rajs                      TRAJS                     650.121.8009         17-OCT-95 ST_CLERK         3500                       124            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- --------- ---------- ---------- -------------- ---------- -------------
+        205 Shelley              Higgins                   SHIGGINS                  515.123.8080         07-JUN-94 AC_MGR          12000                       101           110
+        206 William              Gietz                     WGIETZ                    515.123.8181         07-JUN-94 AC_ACCOUNT       8300                       205           110
+        102 Lex                  De Haan                   LDEHAAN                   515.123.4569         13-JAN-93 AD_VP           17000                       100            90
+        104 Bruce                Ernst                     BERNST                    590.423.4568         21-MAY-91 IT_PROG          6000                       103            60
+        103 Alexander            Hunold                    AHUNOLD                   590.423.4567         03-JAN-90 IT_PROG          9000                       102            60
+
+16 rows selected. 
+

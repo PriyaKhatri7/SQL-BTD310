@@ -1,0 +1,203 @@
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- --------- ---------- ---------- -------------- ---------- -------------
+        100 Steven               King                      SKING                     515.123.4567         17-JUN-87 AD_PRES         24000                                      90
+        101 Neena                Kochhar                   NKOCHHAR                  515.123.4568         21-SEP-89 AD_VP           17000                       100            90
+        102 Lex                  De Haan                   LDEHAAN                   515.123.4569         13-JAN-93 AD_VP           17000                       100            90
+        103 Alexander            Hunold                    AHUNOLD                   590.423.4567         03-JAN-90 IT_PROG          9000                       102            60
+        104 Bruce                Ernst                     BERNST                    590.423.4568         21-MAY-91 IT_PROG          6000                       103            60
+        107 Diana                Lorentz                   DLORENTZ                  590.423.5567         07-FEB-99 IT_PROG          4200                       103            60
+        124 Kevin                Mourgos                   KMOURGOS                  650.123.5234         16-NOV-99 ST_MAN           5800                       100            50
+        141 Trenna               Rajs                      TRAJS                     650.121.8009         17-OCT-95 ST_CLERK         3500                       124            50
+        142 Curtis               Davies                    CDAVIES                   650.121.2994         29-JAN-97 ST_CLERK         3100                       124            50
+        143 Randall              Matos                     RMATOS                    650.121.2874         15-MAR-98 ST_CLERK         2600                       124            50
+        144 Peter                Vargas                    PVARGAS                   650.121.2004         09-JUL-98 ST_CLERK         2500                       124            50
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME                 EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+----------- -------------------- ------------------------- ------------------------- -------------------- --------- ---------- ---------- -------------- ---------- -------------
+        149 Eleni                Zlotkey                   EZLOTKEY                  011.44.1344.429018   29-JAN-00 SA_MAN          10500             .2        100            80
+        174 Ellen                Abel                      EABEL                     011.44.1644.429267   11-MAY-96 SA_REP          11000             .3        149            80
+        176 Jonathon             Taylor                    JTAYLOR                   011.44.1644.429265   24-MAR-98 SA_REP           8600             .2        149            80
+        178 Kimberely            Grant                     KGRANT                    011.44.1644.429263   24-MAY-99 SA_REP           7000            .15        149              
+        200 Jennifer             Whalen                    JWHALEN                   515.123.4444         17-SEP-87 AD_ASST          4400                       101            10
+        201 Michael              Hartstein                 MHARTSTE                  515.123.5555         17-FEB-96 MK_MAN          13000                       100            20
+        202 Pat                  Fay                       PFAY                      603.123.6666         17-AUG-97 MK_REP           6000                       201            20
+        205 Shelley              Higgins                   SHIGGINS                  515.123.8080         07-JUN-94 AC_MGR          12000                       101           110
+        206 William              Gietz                     WGIETZ                    515.123.8181         07-JUN-94 AC_ACCOUNT       8300                       205           110
+
+20 rows selected. 
+
+
+HOUSEING EXPENSE                                                                                          
+----------------------------------------------------------------------------------------------------------
+Steven earns $24,000.00 monthly and no commission to afford spending $8,000.00 on housing
+Neena earns $17,000.00 monthly and no commission to afford spending $5,666.66 on housing
+Lex earns $17,000.00 monthly and no commission to afford spending $5,666.66 on housing
+Alexander earns $9,000.00 monthly and no commission to afford spending $3,000.00 on housing
+Bruce earns $6,000.00 monthly and no commission to afford spending $2,000.00 on housing
+Diana earns $4,200.00 monthly and no commission to afford spending $1,400.00 on housing
+Kevin earns $5,800.00 monthly and no commission to afford spending $1,933.33 on housing
+Trenna earns $3,500.00 monthly and no commission to afford spending $1,166.66 on housing
+Curtis earns $3,100.00 monthly and no commission to afford spending $1,033.33 on housing
+Randall earns $2,600.00 monthly and no commission to afford spending $866.66 on housing
+Peter earns $2,500.00 monthly and no commission to afford spending $833.33 on housing
+
+HOUSEING EXPENSE                                                                                          
+----------------------------------------------------------------------------------------------------------
+Eleni earns $10,500.00 monthly and %20.00 to afford spending $3,500.00 on housing
+Ellen earns $11,000.00 monthly and %30.00 to afford spending $3,666.66 on housing
+Jonathon earns $8,600.00 monthly and %20.00 to afford spending $2,866.66 on housing
+Kimberely earns $7,000.00 monthly and %15.00 to afford spending $2,333.33 on housing
+Jennifer earns $4,400.00 monthly and no commission to afford spending $1,466.66 on housing
+Michael earns $13,000.00 monthly and no commission to afford spending $4,333.33 on housing
+Pat earns $6,000.00 monthly and no commission to afford spending $2,000.00 on housing
+Shelley earns $12,000.00 monthly and no commission to afford spending $4,000.00 on housing
+William earns $8,300.00 monthly and no commission to afford spending $2,766.66 on housing
+
+20 rows selected. 
+
+
+LAST_NAME                 Hire Date              20 years celebration  
+------------------------- ---------------------- ----------------------
+King                      WEDNESDAY, 17/jun/1987 Friday   , 19/Jun/1987
+Kochhar                   THURSDAY , 21/sep/1989 Friday   , 22/Sep/1989
+De Haan                   WEDNESDAY, 13/jan/1993 Friday   , 15/Jan/1993
+Hunold                    WEDNESDAY, 03/jan/1990 Friday   , 05/Jan/1990
+Ernst                     TUESDAY  , 21/may/1991 Friday   , 24/May/1991
+Lorentz                   SUNDAY   , 07/feb/1999 Friday   , 12/Feb/1999
+Mourgos                   TUESDAY  , 16/nov/1999 Friday   , 19/Nov/1999
+Rajs                      TUESDAY  , 17/oct/1995 Friday   , 20/Oct/1995
+Davies                    WEDNESDAY, 29/jan/1997 Friday   , 31/Jan/1997
+Matos                     SUNDAY   , 15/mar/1998 Friday   , 20/Mar/1998
+Vargas                    THURSDAY , 09/jul/1998 Friday   , 10/Jul/1998
+
+LAST_NAME                 Hire Date              20 years celebration  
+------------------------- ---------------------- ----------------------
+Zlotkey                   SATURDAY , 29/jan/2000 Friday   , 04/Feb/2000
+Abel                      SATURDAY , 11/may/1996 Friday   , 17/May/1996
+Taylor                    TUESDAY  , 24/mar/1998 Friday   , 27/Mar/1998
+Grant                     MONDAY   , 24/may/1999 Friday   , 28/May/1999
+Whalen                    THURSDAY , 17/sep/1987 Friday   , 18/Sep/1987
+Hartstein                 SATURDAY , 17/feb/1996 Friday   , 23/Feb/1996
+Fay                       SUNDAY   , 17/aug/1997 Friday   , 22/Aug/1997
+Higgins                   TUESDAY  , 07/jun/1994 Friday   , 10/Jun/1994
+Gietz                     TUESDAY  , 07/jun/1994 Friday   , 10/Jun/1994
+
+20 rows selected. 
+
+
+Day of Hire                                     
+------------------------------------------------
+Monday, the Twenty-Fourth of May, 1999
+Tuesday, the Seventh of June, 1994
+Tuesday, the Twenty-Fourth of March, 1998
+Tuesday, the Seventh of June, 1994
+Tuesday, the Seventeenth of October, 1995
+Tuesday, the Sixteenth of November, 1999
+Tuesday, the Twenty-First of May, 1991
+Wednesday, the Twenty-Ninth of January, 1997
+Wednesday, the Seventeenth of June, 1987
+Wednesday, the Thirteenth of January, 1993
+Wednesday, the Third of January, 1990
+
+Day of Hire                                     
+------------------------------------------------
+Thursday, the Ninth of July, 1998
+Thursday, the Twenty-First of September, 1989
+Thursday, the Seventeenth of September, 1987
+Saturday, the Seventeenth of February, 1996
+Saturday, the Twenty-Ninth of January, 2000
+Saturday, the Eleventh of May, 1996
+Sunday, the Fifteenth of March, 1998
+Sunday, the Seventh of February, 1999
+Sunday, the Seventeenth of August, 1997
+
+20 rows selected. 
+
+
+LAST_NAME                 PHONE_NUMBER         R
+------------------------- -------------------- -
+Whalen                    515.123.4444         A
+King                      515.123.4567         A
+Kochhar                   515.123.4568         A
+De Haan                   515.123.4569         A
+Hartstein                 515.123.5555         A
+Higgins                   515.123.8080         A
+Gietz                     515.123.8181         A
+Hunold                    590.423.4567         B
+Ernst                     590.423.4568         B
+Lorentz                   590.423.5567         B
+Fay                       603.123.6666         C
+
+LAST_NAME                 PHONE_NUMBER         R
+------------------------- -------------------- -
+Vargas                    650.121.2004         D
+Matos                     650.121.2874         D
+Davies                    650.121.2994         D
+Rajs                      650.121.8009         D
+Mourgos                   650.123.5234         D
+Zlotkey                   011.44.1344.429018   E
+Grant                     011.44.1644.429263   E
+Taylor                    011.44.1644.429265   E
+Abel                      011.44.1644.429267   E
+
+20 rows selected. 
+
+
+LAST_NAME                 PHONE_NUMBER         R
+------------------------- -------------------- -
+Whalen                    515.123.4444         A
+King                      515.123.4567         A
+Kochhar                   515.123.4568         A
+De Haan                   515.123.4569         A
+Hartstein                 515.123.5555         A
+Higgins                   515.123.8080         A
+Gietz                     515.123.8181         A
+Hunold                    590.423.4567         B
+Ernst                     590.423.4568         B
+Lorentz                   590.423.5567         B
+Fay                       603.123.6666         C
+
+LAST_NAME                 PHONE_NUMBER         R
+------------------------- -------------------- -
+Vargas                    650.121.2004         D
+Matos                     650.121.2874         D
+Davies                    650.121.2994         D
+Rajs                      650.121.8009         D
+Mourgos                   650.123.5234         D
+Zlotkey                   011.44.1344.429018   E
+Grant                     011.44.1644.429263   E
+Taylor                    011.44.1644.429265   E
+Abel                      011.44.1644.429267   E
+
+20 rows selected. 
+
+
+HIRE_DAT       1995
+-------- ----------
+87-06-17          0
+89-09-21          0
+93-01-13          0
+90-01-03          0
+91-05-21          0
+99-02-07          0
+99-11-16          0
+95-10-17          1
+97-01-29          0
+98-03-15          0
+98-07-09          0
+
+HIRE_DAT       1995
+-------- ----------
+00-01-29          0
+96-05-11          0
+98-03-24          0
+99-05-24          0
+87-09-17          0
+96-02-17          0
+97-08-17          0
+94-06-07          0
+94-06-07          0
+
+20 rows selected. 
+
